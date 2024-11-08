@@ -1,7 +1,7 @@
 # question.practice
  Q.1    c++ program to find largest number among three numbers
 #include<iostream>
-using namespace std;<br>
+using namespace std;
  
 int main(){
  int n,b,m;
