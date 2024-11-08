@@ -43,5 +43,58 @@ if((n=='a'||n=='e'||n=='o'||n=='i'||n=='u'||
 return 0;
 }
 
+# Q .3 // when you campare number which number are large , small and middle ;; 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num1, num2, num3;
+    
+    // User input for three numbers
+    cout << "Enter three numbers: "<<endl;
+    cin >> num1 >> num2 >> num3;
+    
+    int largest, middle, smallest;
+    
+    // Check for the largest number
+    if (num1 >= num2 && num1 >= num3) {
+        largest = num1;
+        if (num2 >= num3) {
+            middle = num2;
+            smallest = num3;
+        } else {
+            middle = num3;
+            smallest = num2;
+        }
+    } else if (num2 >= num1 && num2 >= num3) {
+        largest = num2;
+        if (num1 >= num3) {
+            middle = num1;
+            smallest = num3;
+        } else {
+            middle = num3;
+            smallest = num1;
+        }
+    } else {
+        largest = num3;
+        if (num1 >= num2) {
+            middle = num1;
+            smallest = num2;
+        } else {
+            middle = num2;
+            smallest = num1;
+        }
+    }
+    
+    // Output the results
+    cout << "this team is gold medalist : " << largest << endl;
+    cout << "this team achieve a silver medal: " << middle << endl;
+    cout << "good game this team is achieve bronze medal : " << smallest << endl;
+    
+    return 0;
+}
+
+ 
+
 
 
