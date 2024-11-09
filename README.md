@@ -93,6 +93,43 @@ int main() {
     
     return 0;
 }
+#  badhiya question Q .4 write a program in c++ to find a prime number within a range .
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+int m ,n;
+int a=0 ,b=0;
+int main(){
+    cout<<"find prime number within a range";
+    cout<<"----------------------------";
+    cout<<"input number for starting range";
+    cin>>m; // reading the starting range entered by the range 
+    cout<<"input number for ending range ";
+    cin>>n;// reading the ending range entered by the range 
+    cout<<"the prime numbers between"<<m<<"and"<<n<<"are"<<endl;//display a message 
+    // indicating the range of numbers
+for(int i = m; i<=n; i++ )
+{
+    for(int j = 2 ; j<=sqrt(i);j++)
+    {
+
+if (i%j==0)// checking if the number is divisible by j 
+b++;// incrementing b if i is divisible by j 
+    }
+    if (b== 0 && i!=1)// checking if b is zeroo and i not equal to 1 
+    //prime number should not be 1
+   {
+      a++ ; // incrementing a as prime number is found
+    cout<<i<<" "; // display the prime number 
+   }  
+   b = 0; // resetting b to zero for the next iteration
+}
+cout<<"the total number of prime numbers between "<<m<<"to"<<n<<"is "
+<<a<<endl;//display the total cout of prime numbers found 
+    
+    return 0;
+}
 
  
 
