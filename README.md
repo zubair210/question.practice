@@ -130,7 +130,33 @@ cout<<"the total number of prime numbers between "<<m<<"to"<<n<<"is "
     
     return 0;
 }
+# Q.5 Write a program in c++ to find the sum of the digits of a given number.
+//c++ exercise find the sum of digit of a given number
+#include<iostream>
+using namespace std;
+int num1,num2,r,sum=0;//decleration of integer variable 
+int main(){
+// display a message to find the sum of digits of a given number
+cout<<"find the sum of digits of a given number";
+cout<<"___________________________";
 
+// the user to input a number
+cout<<"input a number"<<endl;
+cin>>num1;//reading the number enter by the user 
+num2 = num1; // store the original number in num2 for display letter
+// loop to extract each digit and calculate their sum 
+while (num1>0)
+
+{
+    r =  num1%10;//extract the rightmost digit of num1;
+    num1 = num1/10;//remove the rightmost digit of num1;
+    sum = sum +r;//add the extracted digit to the sum variable
+
+}
+// display the sum of digit of the original number 'num2'
+cout<<"the sum of the digit "<<num2<<"is"<<sum<<endl;
+return 0;   
+}
  
 
 
