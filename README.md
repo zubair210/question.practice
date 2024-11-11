@@ -93,7 +93,8 @@ int main() {
     
     return 0;
 }
-#  badhiya question Q .4 write a program in c++ to find a prime number within a range .
+                              # loop question
+#  badhiya question Q .1 write a program in c++ to find a prime number within a range .
 
 #include<iostream>
 #include<math.h>
@@ -130,7 +131,7 @@ cout<<"the total number of prime numbers between "<<m<<"to"<<n<<"is "
     
     return 0;
 }
-# Q.5 Write a program in c++ to find the sum of the digits of a given number.
+# Q.2  Write a program in c++ to find the sum of the digits of a given number.
 //c++ exercise find the sum of digit of a given number
 #include<iostream>
 using namespace std;
@@ -157,6 +158,50 @@ while (num1>0)
 cout<<"the sum of the digit "<<num2<<"is"<<sum<<endl;
 return 0;   
 }
+
+# Q.3 write a program in c++ to find the factorial of a number
+#include<iostream>
+using namespace std;
+int n ,factorial= 1;
+int main(){
+cout<<"find the factorial of a number ";//display a message indicate a purpose
+cout<<"________________________";
+cout<<"input a number to find the factorial ";//promoting the user to input a number 
+cin>>n;//reading the number enter by the user
+for(int i = 1;i<=n;i++)//loop calculate the factorial 
+{
+    factorial = factorial*i;
+}
+cout<<"the factorial of a number "<<factorial<<endl;
+    return 0;
+
+  # Q. 4  write a program in c++ to display cube of the number up to an integer
+#include<iostream>
+using namespace std;
+
+int main(){
+int n,b,cube;
+cout<<"enter your number ";
+cin>>b;
+for(int i=1;i<=b;i++)
+{
+ cube = i*i*i;
+    cout<<"number is :"<<i<<"and the cube "<<cube<<endl;//display the number and its cube 
+
+}
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+  
  
 
 
