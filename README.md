@@ -93,7 +93,8 @@ int main() {
     
     return 0;
 }
-                              # loop question
+                            
+   # loop question
 #  badhiya question Q .1 write a program in c++ to find a prime number within a range .
 
 #include<iostream>
