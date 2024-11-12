@@ -216,6 +216,27 @@ cout<<"the LCM of " <<n1<<"and"<<n2<<"is"<<lcm<<endl;//displaying the calculatio
 
     return 0;
    }
+# Q .6 write a program in c++ to find the sum of the series 1+1/2^2+1/3^3.........1/n^n.
+#include<cmath>
+#include<iostream>
+using namespace std;
+
+int main(){
+double sum = 0,a;// double variable 
+int n,i; // decleration of integer variable 
+cout<<"find the sum of the series 1/1^1+2/2^2......n";
+cout<<"_______________________________";
+cout<<"enter your number"<<endl;
+cin>>n;
+for(i=1;i<=n;i++){
+a = 1/pow(i,i);
+cout<<"1/"<<i<<"^"<<i<<"="<<a<<endl;//display the current term
+sum = sum+a;
+}
+//display the tottal sum of the series 
+cout<<"the sum of the series is"<<sum<<endl;
+
+    return 0;
 
 
 
