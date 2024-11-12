@@ -193,6 +193,30 @@ for(int i=1;i<=b;i++)
 
     return 0;
 }
+# Q. 5 write a program in c++ to find the LCM of any two numbers using HCF 
+#include<iostream>
+using namespace std;
+int i,n1,n2,j,hcf=1 ,lcm;
+int main(){
+cout<<"LCM of two number ";//display a message on the consol
+cout<<"-------------";
+cout<<"enter your first number"<<endl;//asking the user fist number 
+cin>>n1;
+cout<<"enter your second number"<<endl;//asking the user second number 
+cin>>n2;
+j= (n1<n2)?n1 :n2;//determining the smaller of the two numbers
+for(i=1;i<=j;i++){//loop to find the highest common factor 
+   if(n1%i==0 && n2%i ==0 ){
+    hcf = i;//updating the hcf when 'i' is a common factor 
+   }
+}
+/* multiploication of HCf and LCM = the multiplication of these two numbers .*/
+lcm= (n1*n2)/hcf;// calculate the least common multiplication lcm using the formula lcm *hcf = product of the number 
+cout<<"the LCM of " <<n1<<"and"<<n2<<"is"<<lcm<<endl;//displaying the calculation LCM
+
+    return 0;
+   }
+
 
 
 
