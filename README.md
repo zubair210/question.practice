@@ -237,7 +237,27 @@ sum = sum+a;
 cout<<"the sum of the series is"<<sum<<endl;
 
     return 0;
+# Q .7 display the pattern right angle triangle using an asterisk 
+#include<iostream>
+using namespace std;
 
+int main(){
+int i,j,row;
+cout<<"now we find  a right angle triangle using as asterisk";
+cout<<"_________________________________";
+cout<<"input number of row"<<endl;
+cin>>row;
+for(i=1;i<=row;i++)
+{
+    for(j=1;j<=i;j++)
+    {
+        cout<<"*";
+    //print an asterisk
+    }
+    cout<<endl;
+} 
+    return 0;
+}
 
 
 
