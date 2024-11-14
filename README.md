@@ -258,6 +258,24 @@ for(i=1;i<=row;i++)
 } 
     return 0;
 }
+# Q.8  display the n term of odd number and their sum 
+#include<iostream>
+using namespace std;
+
+int main(){
+    int i,n,m=0;
+    cout<<"enter your number "<<endl;
+    cin>>n;
+    for(i=1;i<=n;++i)
+    {
+     cout<<i*2-1<<endl;
+     m=m+i;// add the odd number to the sum variable 
+
+    }
+     cout<<"sum of odd number "<<m<<endl;
+    
+    return 0;
+}
 
 
 
