@@ -278,7 +278,24 @@ int main(){
 }
 
 # today is my test my mark 1 out of 10
+# Q .9 recurssion method use in this question but some doubt ? 
+#include<iostream>
+using namespace std;
+int fab(int n)
+{
+    if(n<=2){
+        return 1;
+    }
+    return fab(n-2)+fab(n-1);
+}
 
+int main(){
+    int n;
+    cout<<"enter your number"<<endl;
+    cin>>n;
+    cout<<"the number is  "<<fab(n)<<endl;
+    return 0;
+}
 
 
 
