@@ -1,4 +1,4 @@
-# question.practice
+# question.practice for loop  and if else 
  # Q.1   c++ program to find largest number among three numbers
 
  
@@ -294,6 +294,40 @@ int main(){
     cout<<"enter your number"<<endl;
     cin>>n;
     cout<<"the number is  "<<fab(n)<<endl;
+    return 0;
+}
+# Q . 10  We use or , and together and we find easily a to z vowel or consonant
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main(){
+string input;
+int countvowel = 0;
+int countconsonant = 0;
+cout<<"enter your choice "<<endl;
+getline(cin , input );
+for (int  i = 0; i <input.length(); i++)
+{
+    char c =  input[i];
+    
+    if((c=='a'||c=='e'||c=='o'||c=='i'||c=='u'||
+c=='A'||c=='E'||c=='O'||c=='I'||c=='U')){
+    countvowel++;
+    
+}
+     
+else if (c>'a'&& c <= 'z' || c <= 'Z' && c >='A' )
+{
+    countconsonant++;
+}
+
+        
+    }
+    
+cout<<"kya ho sakta hai "<<countconsonant<<endl;
+cout<<"kya ho sakta hai "<<countvowel<<endl;
+
     return 0;
 }
 
